@@ -1,0 +1,19 @@
+{
+  "budget": 2,
+  "bad_op_code": "E_BAD_OP",
+  "bad_name_code": "E_BAD_NAME",
+  "bad_cond_code": "E_BAD_COND",
+  "dup_mark_code": "E_DUP_MARK",
+  "no_mark_code": "E_NO_MARK",
+  "no_pending_code": "E_NO_PENDING",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "ins": [], "marks": [], "fixed": [], "pending": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "ins", "op": "load" },
+    { "id": 2, "kind": "jump", "label": "L1", "cond": true },
+    { "id": 3, "kind": "ins", "op": "add" },
+    { "id": 4, "kind": "mark", "name": "L1" },
+    { "id": 5, "kind": "fix", "label": "L1" },
+    { "id": 6, "kind": "jump", "label": "L2", "cond": false }
+  ]
+}
